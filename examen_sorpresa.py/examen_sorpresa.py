@@ -1,5 +1,5 @@
 class punto():
-    def __init__(sef,x=0,y=0):
+    def __init__(self,x=0,y=0):
         self.x = x
         self.y=y
     def __str__(self):
@@ -19,4 +19,8 @@ class punto():
             return "Cuadrante 3"
         else:
             return "Cuadrante 4"
+    def vector(self,p):
+        return "El vector entre {} y {} es ({},{})".format(self,p,self.x-p.x,self.y-p.y)
+    def distancia(self,p):
+        return "La distancia entre {} y {} es {}".format(self,p,((self.x-p.x)*2+(self.y-p.y)*2)*0.5)
                                                                                                           
