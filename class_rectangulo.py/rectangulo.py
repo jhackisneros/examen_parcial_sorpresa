@@ -1,5 +1,19 @@
+class punto:
+    def __init__(self, x=0, y=0):
+        self.x = x
+        self.y = y
+
+    def vector(self, other):
+        return (other.x - self.x, other.y - self.y)
+
+    def distancia(self, other):
+        return ((other.x - self.x)**2 + (other.y - self.y)**2)**0.5
+
+    def __repr__(self):
+        return f"({self.x}, {self.y})"
+
 class rectangulo():
-    def __init__(self,punto1=punto(),punto2=punto()):
+    def __init__(self, punto1=punto(), punto2=punto()):
         super().__init__()
         self.punto1 = punto1
         self.punto2 = punto2
@@ -20,9 +34,9 @@ print(f"el punto a es {a}")
 print(f"el punto b es {b}")
 print(f"el punto c es {c}")
 print(f"el punto d es {d}")
-
-print("\n vectores")
-print(f"el vector ab es {a.vector(b)}")
+print(f"la base es {rectangulo.base()}")
+print(f"la altura es {rectangulo.altura()}")
+print(f"el area es {rectangulo.area()}")
 print(f"el vector ba es {b.vector(a)}")
 
 print("\n Distancias")
@@ -37,3 +51,6 @@ print("\nRectangulo")
 print(f"la base es {rectangulo.base}()")
 print(f"la altura es {rectangulo.altura}()")
 print(f"el area es {rectangulo.area}()")
+
+if __name__== "__main__":
+    class_rectangulo =rectangulo()

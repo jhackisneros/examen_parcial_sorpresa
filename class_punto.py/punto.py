@@ -24,3 +24,6 @@ class punto():
         return "El vector entre {} y {} es ({},{})".format(self,p,self.x-p.x,self.y-p.y)
     def distancia(self,p):
         return "La distancia entre {} y {} es {}".format(self,p,((self.x-p.x)*2+(self.y-p.y)*2)*0.5)
+
+if __name__== "__main__":
+    class_punto =punto()
