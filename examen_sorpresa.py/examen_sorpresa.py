@@ -47,4 +47,8 @@ print(f"el punto b es {b}")
 print(f"el punto c es {c}")
 print(f"el punto d es {d}")
 
+print("\n vectores")
+print(f"el vector ab es {a.vector(b)}")
+print(f"el vector ba es {b.vector(a)}")
+
                                                                                                           
