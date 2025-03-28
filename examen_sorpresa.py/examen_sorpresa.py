@@ -1,3 +1,5 @@
+import math
+
 class punto():
     def __init__(self,x=0,y=0):
         self.x = x
@@ -23,4 +25,6 @@ class punto():
         return "El vector entre {} y {} es ({},{})".format(self,p,self.x-p.x,self.y-p.y)
     def distancia(self,p):
         return "La distancia entre {} y {} es {}".format(self,p,((self.x-p.x)*2+(self.y-p.y)*2)*0.5)
+class rectangulo():
+
                                                                                                           
