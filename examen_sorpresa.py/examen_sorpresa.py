@@ -26,5 +26,16 @@ class punto():
     def distancia(self,p):
         return "La distancia entre {} y {} es {}".format(self,p,((self.x-p.x)*2+(self.y-p.y)*2)*0.5)
 class rectangulo():
+    def __init__(self,punto1=punto(),punto2=punto()):
+        self.punto1 = punto1
+        self.punto2 = punto2
+    def base(self):
+        return "la base del rectangulo es{}".format(abs(self.punto1.x-self.punto2.x))
+    def altura(self):
+        return "la altura del rectangulo es{}".format(abs(self.punto1.y-self.punto2.y))
+    def area(self):
+        return "el area del rectangulo es{}".format(self.base()*self.altura())
+    
+    
 
                                                                                                           
