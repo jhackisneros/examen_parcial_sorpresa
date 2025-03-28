@@ -24,9 +24,9 @@ class rectangulo():
     def area(self):
         return "el area del rectangulo es{}".format(self.base()*self.altura())
     
-a = punto(4,8)
-b = punto(9,9)
-c = punto (-5,-10)
+a = punto(2,3)
+b = punto(5,5)
+c = punto (-3,-1)
 d = punto(0,0)
     
 print("los puntos son")
