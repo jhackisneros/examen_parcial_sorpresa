@@ -2,27 +2,42 @@ from class_punto import Punto
 from class_rectangulo import Rectangulo
 
 if __name__ == "__main__":
-    a = Punto(2, 3)
-    b = Punto(5, 5)
-    c = Punto(-3, -1)
-    d = Punto(0, 0)
+    A = Punto(2, 3)
+    B = Punto(5, 5)
+    C = Punto(-3, -1)
+    D = Punto(0, 0)
 
-    print("Los puntos son:")
-    print(f"El punto a es {a}")
-    print(f"El punto b es {b}")
-    print(f"El punto c es {c}")
-    print(f"El punto d es {d}")
+    print("Puntos:")
+    print(f"A: {A}")
+    print(f"B: {B}")
+    print(f"C: {C}")
+    print(f"D: {D}")
+
+    print("\nCuadrantes:")
+    print(f"A pertenece al {A.cuadrante()}")
+    print(f"B pertenece al {B.cuadrante()}")
+    print(f"C pertenece al {C.cuadrante()}")
+    print(f"D pertenece al {D.cuadrante()}")
+
+    print("\nVectores:")
+    print(f"Vector AB: {A.vector(B)}")
+    print(f"Vector BA: {B.vector(A)}")
 
     print("\nDistancias:")
-    print(f"La distancia entre a y b es {a.distancia(b):.2f}")
-    print(f"La distancia entre b y a es {b.distancia(a):.2f}")
+    print(f"Distancia entre A y B: {A.distancia(B)}")
+    print(f"Distancia entre B y A: {B.distancia(A)}")
 
-    distancias = {a: a.distancia(b), b: b.distancia(a), c: c.distancia(d), d: d.distancia(a)}
+    distancias = {
+        "A": A.distancia(D),
+        "B": B.distancia(D),
+        "C": C.distancia(D)
+    }
     punto_mas_lejano = max(distancias, key=distancias.get)
-    print(f"El punto más lejano es {punto_mas_lejano} y su distancia es {distancias[punto_mas_lejano]:.2f}")
+    print(f"\nEl punto más lejano del origen es: {punto_mas_lejano}")
 
-    rectangulo = Rectangulo(a, b)
+    rectangulo = Rectangulo(A, B)
+
     print("\nRectángulo:")
-    print(f"La base es {rectangulo.base()}")
-    print(f"La altura es {rectangulo.altura()}")
-    print(f"El área es {rectangulo.area()}")
+    print(f"Base: {rectangulo.base()}")
+    print(f"Altura: {rectangulo.altura()}")
+    print(f"Área: {rectangulo.area()}")
