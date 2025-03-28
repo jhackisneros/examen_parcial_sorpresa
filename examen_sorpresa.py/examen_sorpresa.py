@@ -51,4 +51,9 @@ print("\n vectores")
 print(f"el vector ab es {a.vector(b)}")
 print(f"el vector ba es {b.vector(a)}")
 
+print("\n Distancias")
+print(f"la distancia entre ab es {a.distancia(b)}")
+print(f"la distancia entre ba es {b.distancia(a)}")
+
+
                                                                                                           
