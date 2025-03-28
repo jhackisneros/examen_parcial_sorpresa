@@ -1,6 +1,3 @@
-from class_punto import punto
-
-
 class rectangulo():
     def __init__(self,punto1=punto(),punto2=punto()):
         super().__init__()
